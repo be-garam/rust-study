@@ -23,3 +23,26 @@ Google의 [Comprehensive Rust (한국어판)](https://google.github.io/comprehen
 Claude CLI(Claude Code)와 토론하며 공부한 내용을 아카이브
 - 코스를 따라가며 생긴 질문과 그에 대해 claude에게 확인하며 받은 답변 및 이를 정리한 개념 노트
 - 실습 코드
+
+## 폴더 구조
+
+```
+rust-study/
+├── Cargo.toml
+├── README.md
+├── notes/                      # 토론·질문·개념 정리
+│   ├── before/                 # 코스 시작 전 준비(설치, 환경)
+│   │   └── 0_setting.md
+│   └── fundamentals/
+│       ├── 01-hello-world.md
+│       └── 02-types-and-values.md
+└── src/
+    ├── main.rs                 # 수업 중 잠깐 실험하는 연습장
+    └── bin/                    # 코스의 연습문제 풀이
+        ├── 01_fibonacci.rs
+        └── 02_collatz.rs
+```
+
+- 노트: 코스의 단원 순서대로 번호를 붙여 `notes/<과정>/`에 보관
+- 연습문제: 문제 하나당 파일 하나, `cargo run --bin 01_fibonacci`처럼 파일명으로 골라 실행
+- `src/main.rs`: 남길 필요 없는 짧은 실험용, `cargo run`으로 실행
