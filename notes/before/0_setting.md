@@ -10,6 +10,24 @@
     - 유닛 테스트를 실행하는 테스트 러너를 내장
 - 이 폴더는 cargo로 만든 프로젝트(Cargo.toml + src/main.rs의 Hello world)
 
+## Check and Create folder
+- 툴 버전 확인
+    ```
+    > rustc --version
+    rustc 1.100.0 (0ef1bc386 2026-11-09)
+    > cargo --version
+    cargo 1.100.0 (3acc79c0c 2026-11-05)
+    ```
+- 이 프로젝트는 `cargo new rust-stury`로 만들어짐
+- 그냥 run 실행시:
+    ```
+    > cargo run
+    Compiling rust-study v0.1.0 (/home/begaram/projects/rust-study)
+        Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.06s
+        Running `target/debug/rust-study`
+    Hello, world!
+    ```
+
 ## Meaning of `bin`
 - `bin`: binary = 실행할 수 있는 프로그램 파일
     - 소스 코드: 사람이 읽고 쓰는 텍스트. `.py`, `.rs`와 같은 파일 
@@ -48,3 +66,9 @@
             3. 전부 같으면 컴파일을 건너뛰고 기존 바이너리를 실행
             4. 하나라도 다르면 다시 컴파일 + 지문 업데이트 
             - Compiling ... 줄이 사라지는 걸 통해서 인지가 가능
+
+## 명령어
+- `cargo check`: 빠르게 에러를 확인
+- `cargo build`: 실행없이 컴파일
+    - 이 경우에 `target/debug/`폴더에서 output을 확인 가능 
+- `cargo build --release`: 릴리즈 버전용 최적화를 켜서 컴파일하며 `target/release/`폴더에서 확인
