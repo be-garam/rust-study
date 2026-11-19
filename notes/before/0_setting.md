@@ -18,7 +18,7 @@
     > cargo --version
     cargo 1.100.0 (3acc79c0c 2026-11-05)
     ```
-- 이 프로젝트는 `cargo new rust-stury`로 만들어짐
+- 이 프로젝트는 `cargo new rust-study`로 만들어짐
 - 그냥 run 실행시:
     ```
     > cargo run
